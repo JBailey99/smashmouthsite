@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=New+Rocker');
+body{margin:0;}
+#navbar
+{
+	font-family: 'New Rocker', cursive;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	border: 1px solid black;
+	background-color: #333;
+}
+div#nav
+{
+	width:70%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	left: 50%;
+	right: 50%;
+	text-align: center;
+}
+div#nav li
+{
+	display:inline;
+}
+div#nav li a {
+	color: white;
+	text-align: center;
+	padding: 1% 4%;
+	text-decoration: none;
+}
+div#nav li a:hover:not(.active)
+{
+	background-color: #111;
+}
+.active {
+	background-color: #891111;
+}
+
+div#image {
+	width: 15%;
+}
+div#image img
+{
+	width: 187.5px;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+	position:fixed;
+	left: 3%;
+}
+div#socmed {
+	width:15%;
+	display:block;
+	position:fixed;
+	top:0;
+	right: 5%;
+	text-align: center;
+}
+div#socmed li
+{
+	display:inline;
+}
+div#socmed li a
+{
+	padding: 1%;
+}
+#bghome {
+     background-image: url('https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp');
+     position: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     bottom: 5;
+     height: 100%;
+     width: 100%;
+     z-index: -999;
+}
+#bgabout {
+	 background: url("../Assets/Background_1.jpg");
+     position: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     bottom: 5;
+     height: 100%;
+     width: 100%;
+     z-index: -999;
+}
+#bgmusic {
+	 background: url("../Assets/Background_2.jpg");
+     position: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     bottom: 5;
+     height: 100%;
+     width: 100%;
+     z-index: -999;
+}
+#bgtour {
+	 background: url("../Assets/Background_3.jpg");
+     position: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     bottom: 5;
+     height: 100%;
+     width: 100%;
+     z-index: -999;
+}
+#bgmedia {
+	 background: url("../Assets/Background_4.jpg");
+     position: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     bottom: 5;
+     height: 100%;
+     width: 100%;
+     z-index: -999;
+}
+#bgnews {
+	 background-image: url("http://www.sickchirpse.com/wp-content/uploads/2015/09/Ainsley-Harriott.jpg");
+     position: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     bottom: 5;
+     height: 100%;
+     width: 100%;
+     z-index: -999;
+}
+div#aboutpage {
+	width: 60%;
+	height: 1000px;
+	margin-top: 54px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#aboutpage div#bg {
+	position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+	width: 60%;
+	opacity: 0.8;
+	background-color: #333;
+	z-index: -998
+}
+div#aboutpage img {
+	float:left;
+	height:auto;
+	width:auto;
+	max-width:25%;
+}
+div#aboutpage p {
+	max-width: 100%;
+	text-align: left;
+	color: white;
+}
