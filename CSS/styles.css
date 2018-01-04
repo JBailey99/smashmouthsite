@@ -127,18 +127,6 @@ div#socmed li a
      width: 100%;
      z-index: -999;
 }
-#bgnews {
-	 background-image: url("http://www.sickchirpse.com/wp-content/uploads/2015/09/Ainsley-Harriott.jpg");
-     position: fixed;
-     background-repeat: no-repeat;
-     background-size: cover;
-     top: 0;
-     left: 0;
-     bottom: 5;
-     height: 100%;
-     width: 100%;
-     z-index: -999;
-}
 div#homepage {
 	width: 60%;
 	height: 100%;
@@ -276,6 +264,7 @@ div.first h2 {
 	text-align: center;
 	color: white;
 	text-decoration: underline;
+	font-style: italic;
 }
 div.second img {
 	float:right;
@@ -294,6 +283,7 @@ div.second h2 {
 	text-align: center;
 	color: white;
 	text-decoration: underline;
+	font-style: italic;
 }
 div.third img {
 	float:left;
@@ -311,6 +301,7 @@ div.third h2 {
 	text-align: center;
 	color: white;
 	text-decoration: underline;
+	font-style: italic;
 }
 div#musicpage {
 	width: 60%;
@@ -480,4 +471,21 @@ div#tourpage div#bg {
 	text-align: center;
 	text-decoration: underline;
 	color: white;
+}
+div#mediapage {
+	width: 60%;
+	height: 100%;
+	margin-top: 54px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#mediapage div#bg {
+	position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+	width: 60%;
+	opacity: 0.8;
+	background-color: #333;
+	z-index: -998
 }
