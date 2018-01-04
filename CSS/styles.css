@@ -193,7 +193,7 @@ div#homepage div#bg {
 	text-decoration: underline;
 	font-weight: bold;
 }
-.latesttours #myTable {
+.latesttours #indexTable {
 	margin-left: auto;
   margin-right: auto;
 	border-collapse: collapse;
@@ -202,16 +202,16 @@ div#homepage div#bg {
   font-size: 18px;
 }
 
-.latesttours #myTable th, #myTable td {
+.latesttours #indexTable th, #indexTable td {
     text-align: center;
     padding: 12px;
 }
 
-.latesttours #myTable tr {
+.latesttours #indexTable tr {
     border-bottom: 1px solid #ddd;
 }
 
-.latesttours #myTable tr.header, #myTable tr:hover {
+.latesttours #indexTable tr.header, #indexTable tr:hover {
     background-color: #919396;
 }
 .latesttours #tableLink{
@@ -265,11 +265,17 @@ div.first img {
 	width:auto;
 	max-width:25%;
 }
-div.first p {
+div.first p{
 	max-width: 100%;
 	text-align: left;
 	color: white;
 	padding-bottom: 5%
+}
+div.first h2 {
+	max-width: 100%;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
 }
 div.second img {
 	float:right;
@@ -283,6 +289,12 @@ div.second p {
 	color: white;
 	padding-bottom: 2%;
 }
+div.second h2 {
+	max-width: 100%;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+}
 div.third img {
 	float:left;
 	height:auto;
@@ -293,6 +305,12 @@ div.third p {
 	max-width: 100%;
 	text-align: left;
 	color: white;
+}
+div.third h2 {
+	max-width: 100%;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
 }
 div#musicpage {
 	width: 60%;
@@ -326,16 +344,16 @@ div#musicpage div#bg {
 .externalmusic {
 	margin-top: 20px;
 	width: 100%;
+	text-align: center;
+	display: inline-block;
 }
 .externalmusic #applemusic {
 	width: 250px;
-	float: left;
-	margin-left: 15%;
+	margin: 20px;
 }
 .externalmusic #spotify {
 	width: 250px;
-	float: right;
-	margin-right: 15%;
+	margin: 20px;
 }
 
 
@@ -412,4 +430,54 @@ div#musicpage div#bg {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+div#tourpage {
+	width: 60%;
+	height: 100%;
+	margin-top: 54px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#tourpage div#bg {
+	position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+	width: 60%;
+	opacity: 0.8;
+	background-color: #333;
+	z-index: -998
+}
+.tablediv {
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#tourTable {
+	margin-left: auto;
+  margin-right: auto;
+	border-collapse: collapse;
+  width: 90%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+	color: white;
+}
+
+#tourTable th, #tourTable td {
+    text-align: center;
+    padding: 12px;
+}
+
+#tourTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#tourTable tr.header, #tourTable tr:hover {
+    background-color: #919396;
+}
+.pageTitle {
+	text-align: center;
+	text-decoration: underline;
+	color: white;
 }
