@@ -1,11 +1,14 @@
+var slideIndex = 0;
+
 window.onload = function() {
 	init();
 	showSlides(slideIndex);
 }
+
 function init() {
 	console.log("init fired");
 }
-var slideIndex = 0;
+
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");

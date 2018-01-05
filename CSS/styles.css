@@ -74,13 +74,13 @@ div#socmed li a
      background-size: cover;
      top: 0;
      left: 0;
-     bottom: 5;
+     bottom: 0;
      height: 100%;
      width: 100%;
      z-index: -999;
 }
 #bgabout {
-	 background: url("../Assets/Background_1.jpg");
+	 background: url("https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp");
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
@@ -92,7 +92,7 @@ div#socmed li a
      z-index: -999;
 }
 #bgmusic {
-	 background: url("../Assets/Background_2.jpg");
+	 background: url("https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp");
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
@@ -104,7 +104,7 @@ div#socmed li a
      z-index: -999;
 }
 #bgtour {
-	 background: url("../Assets/Background_3.jpg");
+	 background: url("https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp");
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
@@ -116,7 +116,7 @@ div#socmed li a
      z-index: -999;
 }
 #bgmedia {
-	 background: url("../Assets/Background_4.jpg");
+	 background: url("https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp");
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
@@ -128,6 +128,7 @@ div#socmed li a
      z-index: -999;
 }
 div#homepage {
+  font-family: 'New Rocker', cursive;
 	width: 60%;
 	height: 100%;
 	margin-top: 54px;
@@ -199,10 +200,11 @@ div#homepage div#bg {
     border-bottom: 1px solid #ddd;
 }
 
-.latesttours #indexTable tr.header, #indexTable tr:hover {
-    background-color: #919396;
+.latesttours #indexTable tr.header{
+    background-color: #111;
 }
 .rowlink:hover {
+	background-color: #891111;
 	cursor: pointer;
 }
 .latesttours #tableLink{
@@ -213,7 +215,7 @@ div#homepage div#bg {
 	color: white;
 }
 .latesttours #tableLink:hover{
-		background-color: #919396;
+		background-color: #891111;
 }
 .latestalbum {
 	height: 454.19px;
@@ -235,6 +237,7 @@ div#homepage div#bg {
 	border: 1px solid white;
 }
 div#aboutpage {
+	font-family: 'New Rocker', cursive;
 	width: 60%;
 	height: 100%;
 	margin-top: 54px;
@@ -308,6 +311,7 @@ div.third h2 {
 	font-style: italic;
 }
 div#musicpage {
+	font-family: 'New Rocker', cursive;
 	width: 60%;
 	height: 100%;
 	margin-top: 54px;
@@ -440,6 +444,7 @@ div#musicpage div#bg {
   to {opacity: 1}
 }
 div#tourpage {
+	font-family: 'New Rocker', cursive;
 	width: 60%;
 	height: 100%;
 	margin-top: 54px;
@@ -507,6 +512,7 @@ div#tourpage div#bg {
 	color: white;
 }
 div#mediapage {
+	font-family: 'New Rocker', cursive;
 	width: 60%;
 	height: 100%;
 	margin-top: 54px;
