@@ -202,6 +202,9 @@ div#homepage div#bg {
 .latesttours #indexTable tr.header, #indexTable tr:hover {
     background-color: #919396;
 }
+.rowlink:hover {
+	cursor: pointer;
+}
 .latesttours #tableLink{
 	display: inline-block;
 	margin-top: 20px;
