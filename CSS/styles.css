@@ -67,6 +67,10 @@ div#socmed li a
 {
 	padding: 0.5%;
 }
+
+
+
+
 #bghome {
      background-image: url('https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp');
      position: fixed;
@@ -127,6 +131,10 @@ div#socmed li a
      width: 100%;
      z-index: -999;
 }
+
+
+
+
 div#homepage {
   font-family: 'New Rocker', cursive;
 	width: 60%;
@@ -310,6 +318,21 @@ div#homepage div#bg {
   to {opacity: 1}
 }
 
+
+
+
+.pageTitle {
+	text-align: center;
+	color: white;
+}
+.pageTitle h1 {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+
+
+
 div#aboutpage {
 	font-family: 'New Rocker', cursive;
 	width: 60%;
@@ -389,6 +412,10 @@ div.third h2 {
 	text-decoration: underline;
 	font-style: italic;
 }
+
+
+
+
 div#musicpage {
 	font-family: 'New Rocker', cursive;
 	width: 60%;
@@ -446,6 +473,9 @@ div#musicpage div#bg {
 	margin: 20px;
 	border-radius: 50%;
 }
+
+
+
 
 div#tourpage {
 	font-family: 'New Rocker', cursive;
@@ -514,11 +544,10 @@ div#tourpage div#bg {
 	height: 100%;
 	margin-bottom: 10px;
 }
-.pageTitle {
-	text-align: center;
-	text-decoration: underline;
-	color: white;
-}
+
+
+
+
 div#mediapage {
 	font-family: 'New Rocker', cursive;
 	width: 60%;
@@ -537,12 +566,6 @@ div#mediapage div#bg {
 	background-color: #333;
 	z-index: -998
 }
-
-
-
-
-
-
 .mediagallery {
 	text-align: center;
 	border: 5px solid white;
@@ -567,17 +590,17 @@ div#mediapage div#bg {
 .mediaimages:hover {opacity: 0.7;}
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 99999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .modal-content {
@@ -618,14 +641,12 @@ div#mediapage div#bg {
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
