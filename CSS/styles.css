@@ -410,7 +410,6 @@ div#musicpage div#bg {
 .albums {
 		display: inline-block;
 		text-align: center;
-		border: 3px solid white;
 }
 .albums img {
 	width: 250px;
@@ -544,11 +543,11 @@ div#mediapage div#bg {
 
 
 
-.mediaimages {
+.mediagallery {
 	text-align: center;
 	border: 5px solid white;
 }
-.mediaimages #mediaimagestitle{
+.mediagallery #mediagallerytitle{
 	color: white;
 	text-align: left;
 	margin-left: 30px;
@@ -556,8 +555,7 @@ div#mediapage div#bg {
 	text-decoration: underline;
 }
 
-/* Style the Image Used to Trigger the Modal */
-.myImg {
+.mediaimages {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -566,9 +564,8 @@ div#mediapage div#bg {
 	display: inline-block;
 }
 
-.myImg:hover {opacity: 0.7;}
+.mediaimages:hover {opacity: 0.7;}
 
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -583,7 +580,6 @@ div#mediapage div#bg {
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
 .modal-content {
     margin: auto;
     display: block;
@@ -591,7 +587,6 @@ div#mediapage div#bg {
     max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
     margin: auto;
     display: block;
@@ -603,18 +598,16 @@ div#mediapage div#bg {
     height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
+.modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
+    from {transform:scale(0)}
     to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;

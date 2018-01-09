@@ -10,21 +10,22 @@ window.onload = function() {
 	modal = document.getElementById('myModal');
 	modalImg = document.getElementById("img01");
 	captionText = document.getElementById("caption");
-	span = document.getElementsByClassName("close")[0];
-	
+
 	showSlides(slideNumber);
-	
-	$('.myImg').click(function() {
-		console.log("cock");
+
+	$(".mediaimages").click(function() {
 		modal.style.display = "block";
 		modalImg.src = this.src;
 		captionText.innerHTML = this.alt;
-
 	});
 
-	span.onclick = function() { 
+	$(".close").click(function() {
 	modal.style.display = "none";
-	};
+	});
+
+	$(".rowlink").click(function() {
+	window.location = $(this).data("href");
+	});
 };
 
 function showSlides() {
@@ -47,19 +48,6 @@ function showSlides() {
     setTimeout(showSlides, 10000);
 	}
 	catch(err) {
-		
-		console.log("i dun fucked up and made an error. but morgan put it in a try catch so it doesnt fuck up the rest of the stuff.");
-		
+
 		}
 }
-
-jQuery(document).ready(function($) {
-    $(".rowlink").click(function() {
-        window.location = $(this).data("href");
-    });
-});
-
-
-
-
-
