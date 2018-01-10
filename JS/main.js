@@ -149,7 +149,7 @@ function updateFace() {
             $('#customiserFace').attr('src', "Assets/smash_mouth.png");
             break;
         case 3:
-            $('#customiserFace').attr('src', "assets/smashmouthtshirt.png");
+            $('#customiserFace').attr('src', "Assets/smashmouthtshirt.png");
             break;
     }
 };
