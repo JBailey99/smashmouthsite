@@ -52,14 +52,14 @@ div#image img
   margin-top: 10px;
   float: left;
 	position:fixed;
-	left: 3%;
+	left: 5px;
 }
 div#socmed {
 	width:15%;
 	display:block;
 	position:fixed;
 	top:0;
-	right: 3%;
+	right: 1%;
 	text-align: center;
 }
 div#socmed ul {
@@ -73,7 +73,7 @@ div#socmed li a
 {
 	padding: 0.5%;
 }
-@media only screen and (max-width: 969px) {
+@media only screen and (max-width: 1000px) {
 	div#nav {
 		width: 100%;
 	}
@@ -98,12 +98,17 @@ div#socmed li a
 		width: 100%;
 	}
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 520px) {
 	div#nav li a {
 		padding: 1% 3%;
 	}
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 420px) {
+	div#nav li a {
+		padding: 1% 2%;
+	}
+}
+@media only screen and (max-width: 420px) {
 	div#nav li a {
 		padding: 1% 1%;
 	}
@@ -545,65 +550,214 @@ div.third h2 {
 .mediaimages:hover {opacity: 0.7;}
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.8);
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 .modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover, .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+@media only screen and (max-width: 700px) {
+  .modal-content {
+      width: 100%;
+  }
+}
+
+
+
+
+.shopcustomiser {
+	text-align: center;
+}
+.left1, .right1 {
+	cursor:pointer;
+	position: relative;
+	display: inline-block;
+}
+.badge1 {
+	height:13px;width:13px;padding:2px;
+}
+.content1 {
+	max-width:980px;
+	margin:auto;
+}
+.section1 {
+margin-top:16px!important;
+margin-bottom:16px!important;
+}
+.center1 {
+text-align:center!important;
+}
+.center1 {
+display:inline-block;
+width:auto;
+}
+.Slideshow1, .panel1 {
+padding:0.01em 16px;
+}
+.panel1 {
+margin-top:16px;
+margin-bottom:16px;
+}
+.large1 {
+font-size:38px!important;
+}
+.text-white1,.hover-text-white1:hover {
+color:Blue!important;
+}
+.display-bottommiddle1 {
+position:absolute;left:50%;
+bottom:0;transform:translate(-50%,0%);
+-ms-transform:translate(-50%,0%);
+}
+.display-container1:hover .display-hover1 {
+display:block;
+}
+.display-container1:hover span.display-hover1 {
+display:inline-block;
+}
+.display-container1 {
+position:relative;
+}
+.left-align1 {
+text-align:left!important;
+}
+.left1 {
+float:left!important;
+}
+.hover-text-khaki1:hover {
+color:#b4aa50!important;
+cursor: pointer;
+}
+.right1 {
+float:right!important;
+}
+
+#customisertxt {
+	position: relative;
+  top: 60px;
+	right: 315px;
+}
+#customtext {
+	position: absolute;
+	top: 250px;
+	right: 200px;
+}
+#T-Shirtpos {
+	position: absolute;
+	top: 240px;
+	left: 50px;
+}
+.T-shirt {
+	display: none;
+	position: absolute;
+}
+.T-shirt#BlackT {
+	display: block;
+}
+#sliderlogos {
+	position: absolute;
+	left: 250px;
+	top: 370px;
+}
+#Customiserpic {
+	position: absolute;
+	top: 240px;
+	right: 100px;
+}
+#customtext1 {
+	position: absolute;
+	top: 315px;
+	right: 200px;
+}
+#Customiserpic1 {
+	position: absolute;
+	top: 310px;
+	right: 100px;
+}
+#customtext2 {
+	position: absolute;
+	top: 375px;
+	right: 200px;
+}
+#Customiserpic2 {
+	position: absolute;
+	top: 370px;
+	right: 100px;
+}
+#nextCustomiser {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+#lastCustomiser {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+#customtext3 {
+	position: absolute;
+	top: 445px;
+	right: 200px;
+}
+#Customiserpic3 {
+	position: absolute;
+	top: 440px;
+	right: 100px;
+}
+#customtext4 {
+	position: absolute;
+	top: 840px;
+	left: 150px;
+	text-align: center;
 }
