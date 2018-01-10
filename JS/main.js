@@ -4,7 +4,7 @@ var img;
 var modalImg;
 var captionText;
 var span;
-var currentFace = 0;
+var currentFace = 1;
 
 
 window.onload = function() {
