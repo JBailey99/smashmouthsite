@@ -701,6 +701,7 @@ float:right!important;
 .T-shirt {
 	display: none;
 	position: absolute;
+	border-radius: 5px;
 }
 .T-shirt#BlackT {
 	display: block;
@@ -756,8 +757,163 @@ float:right!important;
 	right: 100px;
 }
 #customtext4 {
+	color: white;
 	position: absolute;
 	top: 840px;
 	left: 150px;
 	text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+	#customtext4 {
+    left: 50%;
+    transform: translate(-50%);
+	}
+	.T-shirt {
+    transform: translate(-50%);
+	}
+	#T-Shirtpos {
+    left: 50%;
+	}
+	#sliderlogos {
+    left: 50%;
+    transform: translate(-50%);
+	}
+	#Customiserpic {
+    top: 900px;
+    right: initial;
+		left: 25%;
+	}
+	#Customiserpic1 {
+    top: 905px;
+    right: initial;
+		left: 40%;
+	}
+	#Customiserpic2 {
+    top: 905px;
+    right: initial;
+		left: 55%;
+	}
+	#Customiserpic3 {
+    top: 905px;
+    right: initial;
+		left: 70%;
+	}
+	#customtext {
+		top: 960px;
+    right: initial;
+		left: 25%;
+		margin-bottom: 20px;
+	}
+	#customtext1 {
+		top: 960px;
+    right: initial;
+		left: 40%;
+		margin-bottom: 20px;
+	}
+	#customtext2 {
+		top: 960px;
+    right: initial;
+		left: 55%;
+		margin-bottom: 20px;
+	}
+	#customtext3 {
+		top: 960px;
+    right: initial;
+		left: 70%;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 670px) {
+	.T-shirt {
+		width: 450px;
+		height: 400px;
+	}
+	#customtext4 {
+		top: 625px;
+    left: 50%;
+    transform: translate(-50%);
+	}
+	#Customiserpic {
+    top: 700px;
+	}
+	#Customiserpic1 {
+    top: 700px;
+	}
+	#Customiserpic2 {
+    top: 700px;
+	}
+	#Customiserpic3 {
+    top: 700px;
+	}
+	#customtext {
+		top: 750px;
+	}
+	#customtext1 {
+		top: 750px;
+	}
+	#customtext2 {
+		top: 750px;
+	}
+	#customtext3 {
+		top: 750px;
+	}
+	#sliderlogos {
+		top: 320px;
+	}
+	.Slides {
+		max-width: 150px;
+	}
+	.center1 {
+		max-width: 400px;
+	}
+}
+@media only screen and (max-width: 470px) {
+	.T-shirt {
+		width: 300px;
+		height: 275px;
+	}
+	#customtext4 {
+		top: 510px;
+	}
+	#sliderlogos {
+		top: 300px;
+	}
+	.Slides {
+		max-width: 120px;
+	}
+	.center1 {
+		max-width: 250px;
+	}
+	#Customiserpic {
+    top: 620px;
+		left: 10%;
+	}
+	#Customiserpic1 {
+    top: 620px;
+		left: 30%;
+	}
+	#Customiserpic2 {
+    top: 620px;
+		left: 50%;
+	}
+	#Customiserpic3 {
+    top: 620px;
+		left: 70%;
+	}
+	#customtext {
+		top: 670px;
+		left: 10%;
+	}
+	#customtext1 {
+		top: 670px;
+		left: 30%;
+	}
+	#customtext2 {
+		top: 670px;
+		left: 50%;
+	}
+	#customtext3 {
+		top: 670px;
+		left: 70%;
+	}
 }

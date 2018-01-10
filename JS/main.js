@@ -30,6 +30,10 @@ window.onload = function() {
 
 updateFace();
 }
+
+
+
+
 function showSlides() {
     try {
 		var i;
@@ -53,13 +57,6 @@ function showSlides() {
 
 		}
 }
-
-
-
-
-
-
-
 
 
 
@@ -88,53 +85,42 @@ function showDivs1(n) {
   dots1[slideIndex1 - 1].className += "white1";
 }
 
-//T-Shirt Slider End
-
-// T-Shirt  button
 
 
 
 function blackt() {
 
-    document.getElementById("BlackT").style.display = "block";
+  document.getElementById("BlackT").style.display = "block";
 	document.getElementById("WhiteT").style.display = "none";
 	document.getElementById("RedT").style.display = "none";
 	document.getElementById("BlueT").style.display = "none";
 	currentShirtColor = "black";
-
 }
 
 function whitet() {
 
-    document.getElementById("BlackT").style.display = "none";
+  document.getElementById("BlackT").style.display = "none";
 	document.getElementById("WhiteT").style.display = "block";
 	document.getElementById("RedT").style.display = "none";
 	document.getElementById("BlueT").style.display = "none";
 	currentShirtColor = "white";
-
 }
 function redt() {
 
-    document.getElementById("BlackT").style.display = "none";
+  document.getElementById("BlackT").style.display = "none";
 	document.getElementById("WhiteT").style.display = "none";
 	document.getElementById("RedT").style.display = "block";
 	document.getElementById("BlueT").style.display = "none";
 	currentShirtColor = "red";
-
 }
 function bluet() {
 
-    document.getElementById("BlackT").style.display = "none";
+  document.getElementById("BlackT").style.display = "none";
 	document.getElementById("WhiteT").style.display = "none";
 	document.getElementById("RedT").style.display = "none";
 	document.getElementById("BlueT").style.display = "block";
 	currentShirtColor = "blue";
-
 }
-
-
-// T-shirt button end
-
 function nextCustomiser() {
     if(currentFace == 3) {
         currentFace = 1;
@@ -143,7 +129,6 @@ function nextCustomiser() {
     }
     updateFace();
 }
-
 function lastCustomiser() {
     if(currentFace == 1) {
         currentFace = 3;
@@ -152,7 +137,6 @@ function lastCustomiser() {
     }
     updateFace();
 }
-
 function updateFace() {
     switch(currentFace) {
         case 1:
