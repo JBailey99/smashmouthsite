@@ -113,7 +113,7 @@ div#socmed li a
 
 
 .bgall {
-     background-image: url('https://static.wixstatic.com/media/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_1920,h_1920,al_t,q_85,usm_0.66_1.00_0.01/37bbce_4132e0d823a041c79fb9152705b6cca7~mv2_d_4800_4800_s_4_2.webp');
+     background-image: url("../Assets/SiteBackground.jpg");
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
