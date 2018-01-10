@@ -250,12 +250,30 @@ div#socmed li a
 	height: 400px;
 	border: 1px solid white;
 }
+.pagelink {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	margin: 80px 0px 80px 0px;
+}
+.pagelink a {
+	background-color: #111;
+	padding: 10px;
+	text-decoration: none;
+  color: white;
+}
+.pagelink a:hover {
+	background-color: #891111;
+}
 @media only screen and (max-width: 600px) {
 	.latesttours {
 		width: 100%;
 	}
 	.latestalbum {
 		float: none;
+		width: 100%;
+	}
+	.pagelink {
 		width: 100%;
 	}
 }
@@ -763,6 +781,11 @@ float:right!important;
 	left: 150px;
 	text-align: center;
 }
+#addtobasket {
+	position: absolute;
+	right: 120px;
+	top: 550px;
+}
 @media only screen and (max-width: 1000px) {
 	#customtext4 {
     left: 50%;
@@ -779,7 +802,7 @@ float:right!important;
     transform: translate(-50%);
 	}
 	#Customiserpic {
-    top: 900px;
+    top: 905px;
     right: initial;
 		left: 25%;
 	}
@@ -821,6 +844,12 @@ float:right!important;
     right: initial;
 		left: 70%;
 		margin-bottom: 20px;
+	}
+	#addtobasket {
+		left: 50%;
+		transform: translate(-50%);
+		top: 1050px;
+		margin-bottom: 10px;
 	}
 }
 @media only screen and (max-width: 670px) {
@@ -865,6 +894,9 @@ float:right!important;
 	}
 	.center1 {
 		max-width: 400px;
+	}
+	#addtobasket {
+		top: 800px;
 	}
 }
 @media only screen and (max-width: 470px) {
@@ -916,4 +948,23 @@ float:right!important;
 		top: 670px;
 		left: 70%;
 	}
+	#addtobasket {
+		top: 750px;
+	}
+}
+#demo {
+	width: 80%;
+	height: 500px;
+	display: inline-block;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.criticallog {
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#criticallogtitle {
+	text-decoration: underline;
+	font-style: italic;
 }

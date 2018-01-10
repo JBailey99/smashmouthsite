@@ -21,12 +21,15 @@ window.onload = function() {
 	});
 
 	$(".close").click(function() {
-	modal.style.display = "none";
+		modal.style.display = "none";
 	});
 
 	$(".rowlink").click(function() {
-	window.location = $(this).data("href");
+		window.location = $(this).data("href");
 	});
+	$("#addtobasket").click(function() {
+		alert("Item has been added to basket");
+	})
 
 updateFace();
 }
