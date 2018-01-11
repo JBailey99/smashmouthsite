@@ -122,7 +122,7 @@ div#socmed li a
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
-		 background-position: center;
+		 background-position: center top;
      top: 0;
      left: 0;
      bottom: 0;
@@ -930,5 +930,5 @@ div.third h2 {
 #criticallogtitle {
 	text-decoration: underline;
 	font-style: italic;
+	text-align: center;
 }
-/* Poo */
