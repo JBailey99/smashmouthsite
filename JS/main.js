@@ -1,14 +1,15 @@
 var slideNumber = 0;
+var currentDesign = 1;
 var modal;
 var img;
 var modalImg;
 var captionText;
 var span;
-var currentFace = 1;
 
 
 window.onload = function() {
-	modal = document.getElementById('myModal');
+
+	modal = document.getElementById("myModal");
 	modalImg = document.getElementById("img01");
 	captionText = document.getElementById("caption");
 
@@ -31,7 +32,7 @@ window.onload = function() {
 		alert("Item has been added to basket");
 	})
 
-updateFace();
+updateDesign();
 }
 
 
@@ -64,92 +65,64 @@ function showSlides() {
 
 
 
-function plusDivs1(n) {
-  showDivs1(slideIndex1 += n);
-}
-
-function currentDiv1(n) {
-  showDivs1(slideIndex1 = n);
-}
-
-function showDivs1(n) {
-  var i;
-  var x = document.getElementsByClassName("Slides");
-  var dots1 = document.getElementsByClassName("logo");
-  if (n > x.length) {slideIndex1 = 1}
-  if (n < 1) {slideIndex1 = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots1.length; i++) {
-     dots1[i].className = dots1[i].className.replace("white1", "");
-  }
-  x[slideIndex1-1].style.display = "block";
-  dots1[slideIndex1 - 1].className += "white1";
-}
-
-
-
-
-function blackt() {
-
-  document.getElementById("BlackT").style.display = "block";
-	document.getElementById("WhiteT").style.display = "none";
-	document.getElementById("RedT").style.display = "none";
-	document.getElementById("BlueT").style.display = "none";
+function blackshirt() {
+  document.getElementById("BlackShirt").style.display = "block";
+	document.getElementById("WhiteShirt").style.display = "none";
+	document.getElementById("RedShirt").style.display = "none";
+	document.getElementById("BlueShirt").style.display = "none";
 	currentShirtColor = "black";
 }
-
-function whitet() {
-
-  document.getElementById("BlackT").style.display = "none";
-	document.getElementById("WhiteT").style.display = "block";
-	document.getElementById("RedT").style.display = "none";
-	document.getElementById("BlueT").style.display = "none";
+function whiteshirt() {
+  document.getElementById("BlackShirt").style.display = "none";
+	document.getElementById("WhiteShirt").style.display = "block";
+	document.getElementById("RedShirt").style.display = "none";
+	document.getElementById("BlueShirt").style.display = "none";
 	currentShirtColor = "white";
 }
-function redt() {
-
-  document.getElementById("BlackT").style.display = "none";
-	document.getElementById("WhiteT").style.display = "none";
-	document.getElementById("RedT").style.display = "block";
-	document.getElementById("BlueT").style.display = "none";
+function redshirt() {
+  document.getElementById("BlackShirt").style.display = "none";
+	document.getElementById("WhiteShirt").style.display = "none";
+	document.getElementById("RedShirt").style.display = "block";
+	document.getElementById("BlueShirt").style.display = "none";
 	currentShirtColor = "red";
 }
-function bluet() {
-
-  document.getElementById("BlackT").style.display = "none";
-	document.getElementById("WhiteT").style.display = "none";
-	document.getElementById("RedT").style.display = "none";
-	document.getElementById("BlueT").style.display = "block";
+function blueshirt() {
+  document.getElementById("BlackShirt").style.display = "none";
+	document.getElementById("WhiteShirt").style.display = "none";
+	document.getElementById("RedShirt").style.display = "none";
+	document.getElementById("BlueShirt").style.display = "block";
 	currentShirtColor = "blue";
 }
+
+
+
+
 function nextCustomiser() {
-    if(currentFace == 3) {
-        currentFace = 1;
+    if(currentDesign == 3) {
+        currentDesign = 1;
     } else {
-        currentFace++;
+        currentDesign++;
     }
-    updateFace();
+    updateDesign();
 }
 function lastCustomiser() {
-    if(currentFace == 1) {
-        currentFace = 3;
+    if(currentDesign == 1) {
+        currentDesign = 3;
     } else {
-        currentFace--;
+        currentDesign--;
     }
-    updateFace();
+    updateDesign();
 }
-function updateFace() {
-    switch(currentFace) {
+function updateDesign() {
+    switch(currentDesign) {
         case 1:
-            $('#customiserFace').attr('src', "Assets/Logo.png");
+            $("#customiserDesign").attr("src", "Assets/Logo.png");
             break;
         case 2:
-            $('#customiserFace').attr('src', "Assets/smash_mouth.png");
+            $("#customiserDesign").attr("src", "Assets/smash_mouth.png");
             break;
         case 3:
-            $('#customiserFace').attr('src', "Assets/smashmouthtshirt.png");
+            $("#customiserDesign").attr("src", "Assets/smashmouthtshirt.png");
             break;
     }
 };

@@ -39,25 +39,25 @@
 		<div class="pageTitle"> <h1> Shop </h1>  </div>
 		<div class="shopcustomiser">
 	  	<div id="customtext" class="Text">
-	  		<button style="vertical-align:middle" onclick="blackt()"><span>Black</span></button>
+	  		<button style="vertical-align:middle" onclick="blackshirt()"><span>Black</span></button>
 	  	</div>
 	  	<div id="Customiserpic">
 	  		<img class="Icon1" alt="Black T-Shirt" src="Assets/blacktshirt.png" style="max-width:50px"/>
 	  	</div>
 	  	<div id="customtext1" class="Text">
-	  		<button style="vertical-align:middle" onclick="whitet()"><span>White</span></button>
+	  		<button style="vertical-align:middle" onclick="whiteshirt()"><span>White</span></button>
 	  	</div>
 	  	<div id="Customiserpic1">
 	  		<img class="Icon1" alt="White T-Shirt" src="Assets/whitetshirt.png" style="max-width:50px"/>
 	  	</div>
 	  	<div id="customtext2" class="Text">
-	  		<button style="vertical-align:middle" onclick="redt()"><span>Red</span></button>
+	  		<button style="vertical-align:middle" onclick="redshirt()"><span>Red</span></button>
 	  	</div>
 	  	<div id="Customiserpic2">
 	  		<img class="Icon1" alt="Red T-Shirt" src="Assets/redtshirt.png" style="max-width:50px"/>
 	  	</div>
 	  	<div id="customtext3" class="Text">
-	  		<button style="vertical-align:middle" onclick="bluet()"><span>Blue</span></button>
+	  		<button style="vertical-align:middle" onclick="blueshirt()"><span>Blue</span></button>
 	  	</div>
 	  	<div id="Customiserpic3">
 	  		<img class="Icon1" alt="Blue T-Shirt" src="Assets/bluetshirt.png" style="max-width:50px"/>
@@ -66,20 +66,17 @@
 	  		<p> Use the Arrows to choose the image you would like on your T-Shirt!</p>
 	  	</div>
 	  	<div id="T-Shirtpos">
-	  		<img class="T-shirt" alt="Black T-Shirt Icon" id="BlackT" src="Assets/BlackT.jpg"/>
-	  		<img class="T-shirt" alt="White T-Shirt Icon" id="WhiteT" src="Assets/WhiteT.jpg"/>
-	  		<img class="T-shirt" alt="Red T-Shirt Icon" id="RedT" src="Assets/RedT.jpg"/>
-	  		<img class="T-shirt" alt="Blue T-Shirt Icon" id="BlueT" src="Assets/BlueT.jpg"/>
+	  		<img class="T-shirt" alt="Black T-Shirt Icon" id="BlackShirt" src="Assets/BlackT.jpg"/>
+	  		<img class="T-shirt" alt="White T-Shirt Icon" id="WhiteShirt" src="Assets/WhiteT.jpg"/>
+	  		<img class="T-shirt" alt="Red T-Shirt Icon" id="RedShirt" src="Assets/RedT.jpg"/>
+	  		<img class="T-shirt" alt="Blue T-Shirt Icon" id="BlueShirt" src="Assets/BlueT.jpg"/>
 	  	</div>
 	    <div id="sliderlogos">
-	    	<div class="content1 display-container1" style="max-width:250px">
-	      	<img class="Slides" alt="T-Shirt Design" src="Assets/Logo.png" id="customiserFace" style="width:250px"/>
-			    <div class="center1 Slideshow1 section1 large1 text-white1 display-bottommiddle1" style="width:600px">
-				    <div class="left hover-text-khaki1" id="lastCustomiser" onclick="lastCustomiser()">&#10094;</div>
-				    <div class="right hover-text-khaki1" id="nextCustomiser" onclick="nextCustomiser()">&#10095;</div>
-				    <span class="badge1 logo border1 transparent1 hover-white1" onclick="currentDiv1(1)"></span>
-				    <span class="badge1 logo border1 transparent1 hover-white1" onclick="currentDiv1(2)"></span>
-				    <span class="badge1 logo border1 transparent1 hover-white1" onclick="currentDiv1(3)"></span>
+	    	<div class="designcontainer" style="max-width:250px">
+	      	<img class="Slides" alt="T-Shirt Design" src="Assets/Logo.png" id="customiserDesign" style="width:250px"/>
+			    <div class="arrowsContainer" style="width:600px">
+				    <div class="arrows" id="lastCustomiser" onclick="lastCustomiser()">&#10094;</div>
+				    <div class="arrows" id="nextCustomiser" onclick="nextCustomiser()">&#10095;</div>
 		     </div>
 	    	</div>
 	  	</div>

@@ -638,70 +638,30 @@ div.third h2 {
 .shopcustomiser {
 	text-align: center;
 }
-.left1, .right1 {
-	cursor:pointer;
-	position: relative;
-	display: inline-block;
-}
-.badge1 {
-	height:13px;width:13px;padding:2px;
-}
-.content1 {
+.designcontainer {
 	max-width:980px;
 	margin:auto;
 }
-.section1 {
-margin-top:16px!important;
-margin-bottom:16px!important;
+.arrowsContainer {
+	height: 150px;
+	text-align:center;
+	display:inline-block;
+	padding:0.01em 16px;
+	font-size:38px;
+	margin-top:16px;
+	margin-bottom:16px;
+	color:#111;
+	position:absolute;
+	left:50%;
+	top: 10px;
+	bottom:0;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
 }
-.center1 {
-text-align:center!important;
+.arrows:hover {
+	color:#891111;
+	cursor: pointer;
 }
-.center1 {
-display:inline-block;
-width:auto;
-}
-.Slideshow1, .panel1 {
-padding:0.01em 16px;
-}
-.panel1 {
-margin-top:16px;
-margin-bottom:16px;
-}
-.large1 {
-font-size:38px!important;
-}
-.text-white1,.hover-text-white1:hover {
-color:Blue!important;
-}
-.display-bottommiddle1 {
-position:absolute;left:50%;
-bottom:0;transform:translate(-50%,0%);
--ms-transform:translate(-50%,0%);
-}
-.display-container1:hover .display-hover1 {
-display:block;
-}
-.display-container1:hover span.display-hover1 {
-display:inline-block;
-}
-.display-container1 {
-position:relative;
-}
-.left-align1 {
-text-align:left!important;
-}
-.left1 {
-float:left!important;
-}
-.hover-text-khaki1:hover {
-color:#b4aa50!important;
-cursor: pointer;
-}
-.right1 {
-float:right!important;
-}
-
 #customisertxt {
 	position: relative;
   top: 60px;
@@ -724,7 +684,7 @@ float:right!important;
 	position: absolute;
 	border-radius: 5px;
 }
-.T-shirt#BlackT {
+.T-shirt#BlackShirt {
 	display: block;
 }
 #sliderlogos {
@@ -851,8 +811,8 @@ float:right!important;
 	#addtobasket {
 		left: 50%;
 		transform: translate(-50%);
-		top: 1050px;
-		margin-bottom: 10px;
+		top: 1020px;
+		margin-bottom: 20px;
 	}
 }
 @media only screen and (max-width: 670px) {
@@ -895,7 +855,7 @@ float:right!important;
 	.Slides {
 		max-width: 150px;
 	}
-	.center1 {
+	.customiserArrows {
 		max-width: 400px;
 	}
 	#addtobasket {
@@ -916,7 +876,7 @@ float:right!important;
 	.Slides {
 		max-width: 120px;
 	}
-	.center1 {
+	.customiserArrows {
 		max-width: 250px;
 	}
 	#Customiserpic {
