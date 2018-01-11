@@ -122,6 +122,7 @@ div#socmed li a
      position: fixed;
      background-repeat: no-repeat;
      background-size: cover;
+		 background-position: center;
      top: 0;
      left: 0;
      bottom: 0;
@@ -970,4 +971,4 @@ float:right!important;
 	text-decoration: underline;
 	font-style: italic;
 }
-/* Poo */ 
+/* Poo */
