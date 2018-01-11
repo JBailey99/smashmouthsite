@@ -717,6 +717,8 @@ float:right!important;
 	left: 50px;
 }
 .T-shirt {
+	width: 650px;
+	height: 600px;
 	display: none;
 	position: absolute;
 	border-radius: 5px;
