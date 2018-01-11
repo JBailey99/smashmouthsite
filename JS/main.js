@@ -5,15 +5,52 @@ var img;
 var modalImg;
 var captionText;
 var span;
+var local_basket = [];
+var currentShirtColour = "Black";
 
 
 window.onload = function() {
 
 	modal = document.getElementById("myModal");
-	modalImg = document.getElementById("img01");
+	modalImg = document.getElementById("modalImage");
 	captionText = document.getElementById("caption");
 
 	showSlides(slideNumber);
+
+	if(localStorage.getItem("basket")) {
+		local_basket = JSON.parse(localStorage.getItem("basket"));
+	}
+	else {
+	}
+
+	$("#addtobasket").click(function () {
+	  var currentShirt = {"design": currentDesign, "colour": currentShirtColour, "price": "$14.99"};
+		local_basket.push(currentShirt);
+		localStorage.setItem("basket", JSON.stringify(local_basket));
+		updateBasketTable();
+	});
+
+	updateBasketTable();
+
+	$(document).on("click", "a.removeItem", function(event) {
+		var itemno = event.target.id.split("-")[1];
+		local_basket.splice(itemno, 1);
+		localStorage.setItem("basket", JSON.stringify(local_basket));
+		updateBasketTable();
+	});
+
+	$("#checkout").click(function() {
+		var itemno = event.target.id.split("-")[1];
+		if (local_basket < [1] ) {
+			alert("There are no items in your basket");
+		}
+		else {
+			local_basket.splice(itemno, 999);
+			localStorage.setItem("basket", JSON.stringify(local_basket));
+			updateBasketTable();
+			alert("Items have been paid for and delivered to your location");
+		}
+	});
 
 	$(".mediaimages").click(function() {
 		modal.style.display = "block";
@@ -28,9 +65,6 @@ window.onload = function() {
 	$(".rowlink").click(function() {
 		window.location = $(this).data("href");
 	});
-	$("#addtobasket").click(function() {
-		alert("Item has been added to basket");
-	})
 
 updateDesign();
 }
@@ -65,33 +99,50 @@ function showSlides() {
 
 
 
+function updateBasketTable() {
+	if(localStorage.getItem("basket") == null) {
+		$("#basket").html("<tr id=\"basketHeaders\"><th style=\"width: 25%\">Design</th><th style=\"width: 25%\">Colour</th><th style=\"width: 25%\">Price</th><th style=\"width: 25%\">Remove Items</th></tr><tr><td colspan=\"4\">No items in your basket!</td></tr>");
+	}
+	else {
+		var basket = local_basket;
+		$("#basket").html("<tr id=\"basketHeaders\"><th style=\"width: 25%\">Design</th><th style=\"width: 25%\">Colour</th><th style=\"width: 25%\">Price</th><th style=\"width: 25%\">Remove Items</th></tr>");
+		console.log(basket);
+		for(var i = 0; i < basket.length; i++) {
+			$("#basket").append("<tr><td>" + basket[i].design + "</td><td>" + basket[i].colour + "</td><td>" + basket[i].price + "</td><td><a class=\"removeItem\" id=\"item-"+ i +"\">Remove</a></td></tr>");
+		}
+	}
+}
+
+
+
+
 function blackshirt() {
   document.getElementById("BlackShirt").style.display = "block";
 	document.getElementById("WhiteShirt").style.display = "none";
 	document.getElementById("RedShirt").style.display = "none";
 	document.getElementById("BlueShirt").style.display = "none";
-	currentShirtColor = "black";
+	currentShirtColour = "Black";
 }
 function whiteshirt() {
   document.getElementById("BlackShirt").style.display = "none";
 	document.getElementById("WhiteShirt").style.display = "block";
 	document.getElementById("RedShirt").style.display = "none";
 	document.getElementById("BlueShirt").style.display = "none";
-	currentShirtColor = "white";
+	currentShirtColour = "White";
 }
 function redshirt() {
   document.getElementById("BlackShirt").style.display = "none";
 	document.getElementById("WhiteShirt").style.display = "none";
 	document.getElementById("RedShirt").style.display = "block";
 	document.getElementById("BlueShirt").style.display = "none";
-	currentShirtColor = "red";
+	currentShirtColour = "Red";
 }
 function blueshirt() {
   document.getElementById("BlackShirt").style.display = "none";
 	document.getElementById("WhiteShirt").style.display = "none";
 	document.getElementById("RedShirt").style.display = "none";
 	document.getElementById("BlueShirt").style.display = "block";
-	currentShirtColor = "blue";
+	currentShirtColour = "Blue";
 }
 
 

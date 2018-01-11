@@ -701,6 +701,7 @@ div.third h2 {
 	position: absolute;
 	top: 315px;
 	right: 200px;
+	background-color: #111;
 }
 #Customiserpic1 {
 	position: absolute;
@@ -748,6 +749,48 @@ div.third h2 {
 	position: absolute;
 	right: 120px;
 	top: 550px;
+}
+.buttonText {
+	font-family: 'New Rocker', cursive;
+	color: white;
+	background-color: #111;
+	border: 0px;
+	border: 1px solid white;
+}
+.buttonText:hover {
+	cursor: pointer;
+	background-color: #891111;
+}
+.basketContainer {
+	position: absolute;
+	right: 20px;
+	top: 600px;
+	text-align: center;
+  font-size: 18px;
+	color: white;
+}
+#basket {
+	border: 1px solid white;
+}
+#basketHeaders {
+	background-color: #111;
+	padding: 12px;
+}
+.removeItem:hover {
+	background-color: #891111;
+	cursor: pointer;
+}
+#checkout {
+	margin-top: 15px;
+}
+@media only screen and (max-width: 1200px) {
+	.basketContainer {
+		top:900px;
+		right: initial;
+		left: 50%;
+		transform: translate(-50%);
+		margin-bottom: 20px;
+	}
 }
 @media only screen and (max-width: 1000px) {
 	#customtext4 {
@@ -814,6 +857,9 @@ div.third h2 {
 		top: 1020px;
 		margin-bottom: 20px;
 	}
+	.basketContainer {
+		top: 1050px;
+	}
 }
 @media only screen and (max-width: 670px) {
 	.T-shirt {
@@ -855,11 +901,14 @@ div.third h2 {
 	.Slides {
 		max-width: 150px;
 	}
-	.customiserArrows {
+	.arrowsContainer {
 		max-width: 400px;
 	}
 	#addtobasket {
 		top: 800px;
+	}
+	.basketContainer {
+		top: 850px;
 	}
 }
 @media only screen and (max-width: 470px) {
@@ -876,7 +925,7 @@ div.third h2 {
 	.Slides {
 		max-width: 120px;
 	}
-	.customiserArrows {
+	.arrowsContainer {
 		max-width: 250px;
 	}
 	#Customiserpic {
@@ -913,6 +962,9 @@ div.third h2 {
 	}
 	#addtobasket {
 		top: 750px;
+	}
+	.basketContainer {
+		top: 820px;
 	}
 }
 #demo {

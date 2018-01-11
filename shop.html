@@ -39,25 +39,25 @@
 		<div class="pageTitle"> <h1> Shop </h1>  </div>
 		<div class="shopcustomiser">
 	  	<div id="customtext" class="Text">
-	  		<button style="vertical-align:middle" onclick="blackshirt()"><span>Black</span></button>
+	  		<button class="buttonText" style="vertical-align:middle" onclick="blackshirt()"><span>Black</span></button>
 	  	</div>
 	  	<div id="Customiserpic">
 	  		<img class="Icon1" alt="Black T-Shirt" src="Assets/blacktshirt.png" style="max-width:50px"/>
 	  	</div>
 	  	<div id="customtext1" class="Text">
-	  		<button style="vertical-align:middle" onclick="whiteshirt()"><span>White</span></button>
+	  		<button class="buttonText" style="vertical-align:middle" onclick="whiteshirt()"><span>White</span></button>
 	  	</div>
 	  	<div id="Customiserpic1">
 	  		<img class="Icon1" alt="White T-Shirt" src="Assets/whitetshirt.png" style="max-width:50px"/>
 	  	</div>
 	  	<div id="customtext2" class="Text">
-	  		<button style="vertical-align:middle" onclick="redshirt()"><span>Red</span></button>
+	  		<button class="buttonText" style="vertical-align:middle" onclick="redshirt()"><span>Red</span></button>
 	  	</div>
 	  	<div id="Customiserpic2">
 	  		<img class="Icon1" alt="Red T-Shirt" src="Assets/redtshirt.png" style="max-width:50px"/>
 	  	</div>
 	  	<div id="customtext3" class="Text">
-	  		<button style="vertical-align:middle" onclick="blueshirt()"><span>Blue</span></button>
+	  		<button class="buttonText" style="vertical-align:middle" onclick="blueshirt()"><span>Blue</span></button>
 	  	</div>
 	  	<div id="Customiserpic3">
 	  		<img class="Icon1" alt="Blue T-Shirt" src="Assets/bluetshirt.png" style="max-width:50px"/>
@@ -80,7 +80,13 @@
 		     </div>
 	    	</div>
 	  	</div>
-			<button id="addtobasket"><span>Add To Basket</span></button>
+			<button class="buttonText" id="addtobasket"><span>Add To Basket</span></button>
+		</div>
+		<div class="basketContainer">
+			<h2 id="basketTitle"> Basket </h2>
+			<table id="basket">
+			</table>
+			<button class="buttonText" id="checkout"><span>Checkout</span></button>
 		</div>
 	</div>
 </body>
