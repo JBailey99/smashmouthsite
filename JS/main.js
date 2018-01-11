@@ -100,16 +100,11 @@ function showSlides() {
 
 
 function updateBasketTable() {
-	if(localStorage.getItem("basket") == null) {
-		$("#basket").html("<tr id=\"basketHeaders\"><th style=\"width: 25%\">Design</th><th style=\"width: 25%\">Colour</th><th style=\"width: 25%\">Price</th><th style=\"width: 25%\">Remove Items</th></tr><tr><td colspan=\"4\">No items in your basket!</td></tr>");
-	}
-	else {
-		var basket = local_basket;
-		$("#basket").html("<tr id=\"basketHeaders\"><th style=\"width: 25%\">Design</th><th style=\"width: 25%\">Colour</th><th style=\"width: 25%\">Price</th><th style=\"width: 25%\">Remove Items</th></tr>");
-		console.log(basket);
-		for(var i = 0; i < basket.length; i++) {
-			$("#basket").append("<tr><td>" + basket[i].design + "</td><td>" + basket[i].colour + "</td><td>" + basket[i].price + "</td><td><a class=\"removeItem\" id=\"item-"+ i +"\">Remove</a></td></tr>");
-		}
+	var basket = local_basket;
+	$("#basket").html("<tr id=\"basketHeaders\"><th style=\"width: 25%\">Design</th><th style=\"width: 25%\">Colour</th><th style=\"width: 25%\">Price</th><th style=\"width: 25%\">Remove Items</th></tr>");
+	console.log(basket);
+	for(var i = 0; i < basket.length; i++) {
+	$("#basket").append("<tr><td>" + basket[i].design + "</td><td>" + basket[i].colour + "</td><td>" + basket[i].price + "</td><td><a class=\"removeItem\" id=\"item-"+ i +"\">Remove</a></td></tr>");
 	}
 }
 
